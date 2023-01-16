@@ -22,6 +22,9 @@ localization:
    * - :guilabel:`Indian E-invoice Integration`
      - `l10n_in_edi`
      - :ref:`Indian e-invoicing integration <india/e-invoicing>`
+   * - :guilabel:`Indian GST Return Filing using IAP`
+     - `l10n_in_reports_gstr`
+     - :ref:`Indian GST Return Filing <india/gstr>`
 
 .. _india/e-invoicing:
 
@@ -187,3 +190,66 @@ website.
    .. image:: india/signed-invoice.png
       :align: center
       :alt: verified e-invoice
+
+.. _india/gstr:
+
+Indian GST Return Filing
+========================
+
+Odoo supports **Indian Good and Services Tax (GST) return filing** requirements.
+
+.. _india/gstr_api:
+
+Enable API Access
+-----------------
+
+You must enable API Access On the GST Portal.
+
+#. Login to the :guilabel:`GST Portal` on - https://services.gst.gov.in/services/login by entering your
+   :guilabel:`USERNAME` and :guilabel:`Password`.
+
+   .. image:: india/gst-portal-login.png
+      :align: center
+      :alt: Register On GST portal
+
+#. Now, go to :guilabel:`My Profile`.
+
+   .. image:: india/
+      :align: center
+      :alt: Click On the My Profile from profile
+
+#. Select :guilabel:`Manage API Access`.
+
+   .. image:: india/
+      :align: center
+      :alt: select Manage API access under the Quick Links.
+
+#. Click :guilabel:`Yes` To Enable API Access.
+
+   .. image:: india/
+      :align: center
+      :alt: Click Yes
+
+#. Now, You will be able to see duration dropdown menu. Select :guilabel:`duration` of your preference.
+
+   .. image:: india/
+      :align: center
+      :alt: dropdown list for duration
+
+#. Now, :guilabel:`Confirm` it. You are all set to configure it in odoo :ref:`Configure Your Odoo Indian GST Service <india/gst_configuration>`.
+
+   .. image:: india/
+      :align: center
+      :alt: confirm the duration choice
+
+.. _india/gst_configuration:
+
+Configuration Of Indian GST Service In Odoo
+-------------------------------------------
+
+To set up the Indian GST service, go to :menuselection:`Accounting --> Configuration --> Settings -->
+Indian GST Service`, and enter the :guilabel:`GST Username`.
+
+   .. image:: india/gst-setup.png
+      :align: center
+      :alt: Please enter your GST Portal Username as Username
